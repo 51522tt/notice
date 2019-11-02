@@ -1,1 +1,8 @@
-
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://loacalhost:3306/notice
+    username: root
+    password: chrome2019
