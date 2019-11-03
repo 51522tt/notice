@@ -9,9 +9,6 @@ import org.springframework.stereotype.Component;
 @Mapper
 public interface MessageNoticeMapper {
 
-    @Select("SELECT * FROM tab_notice_type WHERE notice_type_number = #{notice_type_number}")
-    NoticeTypeBean getMessageNoticeTypeByNumber(@Param("notice_type_number") String messageNoticeTypeNumber);
-
     @Select("SELECT * FROM tab_notice_template WHERE notice_template_number = #{noticeTemplateNumber}")
     NoticeTemplateBean getNoticeTemplateByNumber(@Param("noticeTemplateNumber")String noticeTemplateNumber);
 }

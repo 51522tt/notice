@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://10.211.55.12:3306/message_notice_db
+    username: root
+    password: chrome2019
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
